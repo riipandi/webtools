@@ -1,0 +1,8 @@
+.cache/
+out/
+dist/
+package-lock.json
+package.json
+public/
+yarn.lock
+.vercel/
