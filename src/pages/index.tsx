@@ -227,7 +227,7 @@ export default function Home() {
                                   href={item.href}
                                   className='flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50'
                                 >
-                                  <item.icon className='flex-shrink-0 w-6 h-6 text-rose-600' aria-hidden='true' />
+                                  <item.icon className='flex-shrink-0 w-6 h-6 text-brand-600' aria-hidden='true' />
                                   <div className='ml-4'>
                                     <p className='text-sm font-medium text-gray-900'>{item.name}</p>
                                     <p className='mt-1 text-sm text-gray-500'>{item.description}</p>
@@ -305,7 +305,7 @@ export default function Home() {
                                   href={item.href}
                                   className='flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50'
                                 >
-                                  <item.icon className='flex-shrink-0 w-6 h-6 text-rose-600' aria-hidden='true' />
+                                  <item.icon className='flex-shrink-0 w-6 h-6 text-brand-600' aria-hidden='true' />
                                   <div className='ml-4'>
                                     <p className='text-sm font-medium text-gray-900'>{item.name}</p>
                                     <p className='mt-1 text-sm text-gray-500'>{item.description}</p>
@@ -327,7 +327,7 @@ export default function Home() {
                                 </ul>
                               </div>
                               <div className='mt-5 text-sm'>
-                                <BasicLink href='#' className='font-medium text-rose-600 hover:text-rose-500'>
+                                <BasicLink href='#' className='font-medium text-brand-600 hover:text-brand-500'>
                                   {' '}
                                   View all posts <span aria-hidden='true'>&rarr;</span>
                                 </BasicLink>
@@ -346,7 +346,7 @@ export default function Home() {
                 </BasicLink>
                 <BasicLink
                   href='#'
-                  className='inline-flex items-center justify-center px-4 py-2 text-sm font-medium border border-transparent rounded-md shadow-md text-rose-500 hover:text-rose-600 bg-rose-100 whitespace-nowrap hover:bg-rose-200'
+                  className='inline-flex items-center justify-center px-4 py-2 text-sm font-medium border border-transparent rounded-md shadow-md text-brand-500 hover:text-brand-600 bg-brand-100 whitespace-nowrap hover:bg-brand-200'
                 >
                   Create Account
                 </BasicLink>
@@ -390,7 +390,7 @@ export default function Home() {
                           href={item.href}
                           className='flex items-center p-3 -m-3 rounded-md hover:bg-gray-50'
                         >
-                          <item.icon className='flex-shrink-0 w-6 h-6 text-rose-600' aria-hidden='true' />
+                          <item.icon className='flex-shrink-0 w-6 h-6 text-brand-600' aria-hidden='true' />
                           <span className='ml-3 text-sm font-medium text-gray-900'>{item.name}</span>
                         </BasicLink>
                       ))}
@@ -427,13 +427,13 @@ export default function Home() {
                   <div>
                     <BasicLink
                       href='#'
-                      className='flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-rose-600 hover:bg-rose-700'
+                      className='flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-brand-600 hover:bg-brand-700'
                     >
                       Sign up
                     </BasicLink>
                     <p className='mt-6 text-sm font-medium text-center text-gray-500'>
                       Existing customer?{' '}
-                      <BasicLink href='#' className='text-rose-600 hover:text-rose-500'>
+                      <BasicLink href='#' className='text-brand-600 hover:text-brand-500'>
                         Sign in
                       </BasicLink>
                     </p>
@@ -452,10 +452,10 @@ export default function Home() {
                 <div className='mt-12'>
                   <div>
                     <BasicLink href='#' className='inline-flex space-x-4'>
-                      <span className='rounded bg-rose-50 px-2.5 py-1 text-xs font-semibold text-rose-600 tracking-wide uppercase'>
+                      <span className='rounded bg-brand-50 px-2.5 py-1 text-xs font-semibold text-brand-600 tracking-wide uppercase'>
                         What&apos;s new
                       </span>
-                      <span className='inline-flex items-center space-x-1 text-sm font-medium text-rose-600'>
+                      <span className='inline-flex items-center space-x-1 text-sm font-medium text-brand-600'>
                         <span>Just shipped version 0.1.0</span>
                         <ChevronRightIcon className='w-5 h-5' aria-hidden='true' />
                       </span>
@@ -475,14 +475,14 @@ export default function Home() {
                       <input
                         id='hero-email'
                         type='email'
-                        className='block w-full px-5 py-3 text-base text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm focus:border-rose-500 focus:ring-rose-500'
+                        className='block w-full px-5 py-3 text-base text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm focus:border-brand-500 focus:ring-brand-500'
                         placeholder='Get more tools, enter your email'
                       />
                     </div>
                     <div className='mt-4 sm:mt-0 sm:ml-3'>
                       <button
                         type='submit'
-                        className='block w-full px-5 py-3 text-base font-medium text-white border border-transparent rounded-md shadow bg-rose-600 hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2 sm:px-10'
+                        className='block w-full px-5 py-3 text-base font-medium text-white border border-transparent rounded-md shadow bg-brand-600 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 sm:px-10'
                       >
                         Notify me
                       </button>
@@ -499,7 +499,7 @@ export default function Home() {
                       </div>
                       <div className='flex-1 min-w-0 py-1 pl-5 text-sm text-gray-500 sm:py-3'>
                         <span className='font-medium text-gray-900'>Rated 5 stars</span> by over{' '}
-                        <span className='font-medium text-rose-600'>500 beta users</span>
+                        <span className='font-medium text-brand-600'>500 beta users</span>
                       </div>
                     </div>
                   </div>
@@ -546,14 +546,14 @@ export default function Home() {
         </div>
         {/* Hero section */}
 
-        <div className='bg-gradient-to-b from-rose-50 via-white to-white'>
+        <div className='bg-gradient-to-b from-brand-50 via-white to-white'>
           {/* Pricing section with single price and feature list */}
           <div className='max-w-6xl px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:px-8'>
             <div className='pb-16 xl:flex xl:items-center xl:justify-between'>
               <div>
                 <h1 className='text-3xl font-extrabold sm:text-4xl sm:tracking-tight'>
                   <span className='text-gray-900'>Everything you need for </span>
-                  <span className='text-rose-600'>$99 a month</span>
+                  <span className='text-brand-600'>$99 a month</span>
                 </h1>
                 <p className='mt-5 text-lg text-gray-500'>
                   Includes every feature we offer plus unlimited projects and unlimited users.
@@ -561,14 +561,14 @@ export default function Home() {
               </div>
               <BasicLink
                 href='#'
-                className='inline-flex items-center justify-center w-full px-5 py-3 mt-8 text-sm font-medium text-white border border-transparent rounded-md bg-rose-600 hover:bg-rose-700 sm:mt-10 sm:w-auto xl:mt-0'
+                className='inline-flex items-center justify-center w-full px-5 py-3 mt-8 text-sm font-medium text-white border border-transparent rounded-md bg-brand-600 hover:bg-brand-700 sm:mt-10 sm:w-auto xl:mt-0'
               >
                 Get started today
               </BasicLink>
             </div>
             <div className='pt-16 border-t border-gray-200 xl:grid xl:grid-cols-3 xl:gap-x-8'>
               <div>
-                <h2 className='text-sm font-semibold tracking-wide uppercase text-rose-600'>Everything you need</h2>
+                <h2 className='text-sm font-semibold tracking-wide uppercase text-brand-600'>Everything you need</h2>
                 <p className='mt-2 text-3xl font-extrabold text-gray-900'>All-in-one platform</p>
                 <p className='mt-4 text-lg text-gray-500'>
                   Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla
@@ -601,15 +601,15 @@ export default function Home() {
         </div>
 
         {/* Branded FAQ */}
-        <div className='bg-rose-900'>
+        <div className='bg-brand-900'>
           <div className='max-w-6xl px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:px-8'>
             <h2 className='text-3xl font-extrabold text-white'>Frequently asked questions</h2>
-            <div className='pt-10 mt-6 border-t border-opacity-25 border-rose-400'>
+            <div className='pt-10 mt-6 border-t border-opacity-25 border-brand-400'>
               <dl className='space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-x-8 md:gap-y-12'>
                 {faqs.map((item) => (
                   <div key={item.id}>
                     <dt className='text-lg font-medium leading-6 text-white'>{item.question}</dt>
-                    <dd className='mt-2 text-sm text-rose-200'>{item.answer}</dd>
+                    <dd className='mt-2 text-sm text-brand-200'>{item.answer}</dd>
                   </div>
                 ))}
               </dl>
@@ -618,17 +618,17 @@ export default function Home() {
         </div>
 
         {/* CTA section */}
-        <div className='bg-rose-50 hide-temporary'>
+        <div className='bg-brand-50 hide-temporary'>
           <div className='max-w-6xl px-4 py-12 mx-auto sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between'>
-            <h2 className='text-3xl font-extrabold tracking-tight text-rose-900 sm:text-4xl'>
+            <h2 className='text-3xl font-extrabold tracking-tight text-brand-900 sm:text-4xl'>
               <span className='block'>Ready to dive in?</span>
-              <span className='block text-rose-600'>Start your free trial today.</span>
+              <span className='block text-brand-600'>Start your free trial today.</span>
             </h2>
             <div className='flex mt-8 lg:flex-shrink-0 lg:mt-0'>
               <div className='inline-flex rounded-md shadow'>
                 <BasicLink
                   href='#'
-                  className='inline-flex items-center justify-center px-5 py-3 text-sm font-medium text-white border border-transparent rounded-md bg-rose-600 hover:bg-rose-700'
+                  className='inline-flex items-center justify-center px-5 py-3 text-sm font-medium text-white border border-transparent rounded-md bg-brand-600 hover:bg-brand-700'
                 >
                   Get started
                 </BasicLink>

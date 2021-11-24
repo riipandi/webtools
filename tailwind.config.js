@@ -22,31 +22,8 @@ module.exports = {
       },
       colors: {
         gray: defaultColor.trueGray,
-        rose: defaultColor.rose,
-        brand: {
-          50: '#b25de3',
-          100: '#a853d9',
-          200: '#9e49cf',
-          300: '#943fc5',
-          400: '#8a35bb',
-          500: '#802bb1',
-          600: '#7621a7',
-          700: '#6c179d',
-          800: '#620d93',
-          900: '#580389'
-        },
-        accent: {
-          50: '#5f5a70',
-          100: '#555066',
-          200: '#4b465c',
-          300: '#413c52',
-          400: '#373248',
-          500: '#2d283e',
-          600: '#231e34',
-          700: '#19142a',
-          800: '#0f0a20',
-          900: '#050016'
-        }
+        brand: defaultColor.rose,
+        accent: defaultColor.purple
       },
       typography: (theme) => ({
         default: {
