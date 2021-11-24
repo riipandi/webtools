@@ -26,3 +26,7 @@ h6 {
 .text--shadow {
   @apply filter drop-shadow-lg md:drop-shadow-2xl;
 }
+
+.hide-temporary {
+    @apply hidden;
+}
