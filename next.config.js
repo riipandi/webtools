@@ -1,20 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
   env: {
-    siteMeta: {
-      url: process.env.SITE_URL || 'http://localhost:3000',
-      title: 'Next.js Tailwind Starter',
-      description: 'A starter for Next.js with Tailwind CSS and Typescript',
-      imageUrl: '/images/og-image.png'
-    }
+    SPLITBEE_TOKEN: process.env.SPLITBEE_TOKEN || ''
   },
   images: {
-    domains: ['doodleipsum.com', 'images.unsplash.com', 'shuffle.dev', 'tailwindui.com']
+    domains: ['doodleipsum.com', 'images.unsplash.com', 'pbs.twimg.com', 'shuffle.dev', 'tailwindui.com']
   },
   eslint: {
     dirs: ['src']
   },
+  reactStrictMode: true,
+  poweredByHeader: false,
   async rewrites() {
     return [
       {
