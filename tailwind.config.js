@@ -22,6 +22,7 @@ module.exports = {
       },
       colors: {
         gray: defaultColor.trueGray,
+        rose: defaultColor.rose,
         brand: {
           50: '#b25de3',
           100: '#a853d9',

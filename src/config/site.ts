@@ -1,6 +1,6 @@
 export const siteMeta = {
-  defaultTitle: 'Online Web Tools',
-  description: `Good stuff for developers by Aris Ripandi.`,
+  defaultTitle: 'Online Tools for Developers',
+  description: `Good stuff for developers. This site provides a set of online tools for helping development.`,
   imageUrl: '/images/og-image.png',
   twitterUsername: '@riipandi',
 
