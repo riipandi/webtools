@@ -21,6 +21,7 @@ import { Fragment } from 'react'
 
 import imgSiteLogo from '@/assets/images/red-w-512.png'
 
+import { Maintenance } from '@/components/Elements'
 import { BasicLink } from '@/components/Essentials'
 import { Layout } from '@/components/SiteLayout'
 
@@ -166,6 +167,10 @@ const footerNavigation = {
 }
 
 export default function Home() {
+  if (process.env.MAINTENANCE_MODE) {
+    return <Maintenance />
+  }
+
   return (
     <Layout fullTitle={siteMeta.defaultTitle} withHeader withFooter animate>
       <div className='bg-white'>
