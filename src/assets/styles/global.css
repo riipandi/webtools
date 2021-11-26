@@ -28,5 +28,5 @@ h6 {
 }
 
 .hide-temporary {
-    @apply hidden;
+  @apply hidden;
 }
