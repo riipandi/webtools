@@ -11,7 +11,7 @@ module.exports = {
     formats: ['image/avif', 'image/webp'],
     disableStaticImages: false,
     minimumCacheTTL: 60,
-    domains: ['*']
+    domains: ['error404.fun']
   },
   reactStrictMode: true,
   poweredByHeader: false,
