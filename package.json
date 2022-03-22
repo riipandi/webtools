@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
-    "@fontsource/be-vietnam-pro": "^4.5.2",
+    "@fontsource/inter": "^4.5.5",
     "@fontsource/jetbrains-mono": "^4.5.3",
     "@svgr/webpack": "^6.2.1",
     "@types/node": "^17.0.22",
