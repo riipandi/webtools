@@ -20,7 +20,7 @@ const PageLayout: FC<Props> = ({ children, ...props }) => {
   return (
     <div className='flex flex-col min-h-screen bg-white dark:bg-gray-900'>
       <MetaHead title={title} description={description} ogImage={ogImage} noindex={noindex} />
-      <Header className='absolute top-0 w-full' />
+      <Header />
       <main className='flex-grow'>
         <PageTransition {...props}>{children}</PageTransition>
       </main>
