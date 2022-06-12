@@ -8,21 +8,21 @@ import { PageLayout } from '@/layouts/site-layout'
 import { IconNetwork } from '@tabler/icons'
 
 export default function HomePage() {
-  const { data, error } = useSWR('/api/ip-address', swrFetcher)
+  const { data, error } = useSWR('/api/userinfo', swrFetcher)
 
   if (error) return <div>Failed to load</div>
   if (!data) return null
 
   return (
     <PageLayout title={`>${siteMeta.siteTitle}`} className='content-wrapper'>
-      <section className='flex flex-col py-10 mx-auto lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center'>
+      <section className='flex flex-col py-14 mx-auto lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center'>
         <div className='w-full lg:w-1/2'>
           <div className='lg:max-w-lg'>
-            <h1 className='text-3xl font-extrabold tracking-tight text-gray-800 dark:text-white lg:text-4xl'>
+            <h1 className='text-4xl text-center lg:text-left font-extrabold tracking-tight text-gray-800 dark:text-white lg:text-4xl'>
               {siteMeta.siteTitle}
             </h1>
             <div className='mt-8 space-y-5'>
-              <p className='mt-6 text-gray-500 text-xl dark:text-gray-300'>
+              <p className='mt-6 text-center lg:text-left text-gray-500 text-xl dark:text-gray-300'>
                 More than a webmaster tools.
                 {siteMeta.description}
               </p>
@@ -34,7 +34,7 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-        <div className='flex items-center justify-center w-full h-96 lg:w-1/2 pl-8'>
+        <div className='flex items-center justify-center w-full h-96 lg:w-1/2 lg:pl-8 lg-mt-0 mt-14'>
           <div className='p-8 space-y-3 border-2 border-primary-400 w-full dark:border-primary-300 rounded-sm bg-white dark:bg-gray-800'>
             <span className='inline-block text-primary-500 dark:text-primary-400'>
               <IconNetwork className='w-8 h-8' />

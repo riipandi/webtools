@@ -31,7 +31,7 @@ const Header = () => {
               </button>
             </div>
           </div>
-          <div className='flex flex-col text-gray-600 capitalize dark:text-gray-300 lg:flex lg:px-12 lg:flex-row lg:items-center'>
+          <div className='hidden flex-col text-gray-600 capitalize dark:text-gray-300 lg:flex lg:px-12 lg:flex-row lg:items-center'>
             <div>
               <Link href='/about'>
                 <a className='mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200'>
@@ -70,7 +70,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className='flex items-center justify-center mt-6 space-x-5 lg:flex lg:mt-0'>
+        <div className='hidden items-center justify-center mt-6 space-x-5 lg:flex lg:mt-0'>
           <Link href='https://github.com/riipandi/webtools'>
             <a
               className='text-gray-600 transition-colors duration-200 transform dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300'
