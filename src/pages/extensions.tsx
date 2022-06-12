@@ -3,9 +3,9 @@ import { IconArrowBigLeftLine } from '@tabler/icons'
 import { PageLayout } from '@/layouts/site-layout'
 import { Anchor } from '@/components/elements'
 
-export default function About() {
+export default function ExtensionPage() {
   return (
-    <PageLayout title='Empty page' className='flex flex-col content-wrapper lg:mt-10'>
+    <PageLayout title='Browser Extension' className='flex flex-col content-wrapper lg:mt-10'>
       <section className='w-full mx-auto'>
         <h1 className='text-2xl font-bold lg:text-3xl text-primary-500'>This page are coming soon</h1>
         <p className='mt-4 text-lg'>

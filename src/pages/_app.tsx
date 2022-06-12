@@ -2,8 +2,7 @@ import PlausibleProvider from 'next-plausible'
 import { ThemeProvider } from 'next-themes'
 import '@/libraries/fontloader'
 
-import '@/styles/tailwind.css'
-import '@/styles/custom.css'
+import '@/styles/global.css'
 
 const isProduction = process.env.NODE_ENV === 'production'
 

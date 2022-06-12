@@ -1,5 +1,5 @@
 import { Switch } from '@headlessui/react'
-import { IconBrightnessHalf, IconMoonStars } from '@tabler/icons'
+import { IconSun, IconMoonStars } from '@tabler/icons'
 import { useTheme } from 'next-themes'
 import React, { useEffect, useState } from 'react'
 
@@ -49,7 +49,7 @@ const ThemeSwitcher = ({ asToggle = false, iconSize = 5, ...props }: Props) => {
             )}
             aria-hidden='true'
           >
-            <IconBrightnessHalf strokeWidth={2} className='w-3 h-3 text-gray-300' />
+            <IconSun strokeWidth={2} className='w-3 h-3 text-gray-300' />
           </span>
           <span
             className={classNames(
@@ -72,15 +72,15 @@ const ThemeSwitcher = ({ asToggle = false, iconSize = 5, ...props }: Props) => {
         <IconMoonStars
           strokeWidth={2}
           className={classNames(
-            iconSize ? `w-${iconSize} h-${iconSize}` : 'w-5 h-5',
+            iconSize ? `w-${iconSize} h-${iconSize}` : 'w-6 h-6',
             'dark:text-primary-50 dark:hover:text-primary-200'
           )}
         />
       ) : (
-        <IconBrightnessHalf
+        <IconSun
           strokeWidth={2}
           className={classNames(
-            iconSize ? `w-${iconSize} h-${iconSize}` : 'w-5 h-5',
+            iconSize ? `w-${iconSize} h-${iconSize}` : 'w-6 h-6',
             'text-gray-700 hover:text-primary-400'
           )}
         />
