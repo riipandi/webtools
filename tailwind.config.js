@@ -13,7 +13,8 @@ module.exports = {
         mono: ['JetBrains Mono', ...defaultTheme.fontFamily.mono],
       },
       colors: {
-        gray: colors.neutral,
+        black: '#050A30',
+        gray: colors.slate,
         primary: {
           50: '#faf5fe',
           100: '#f5ebfc',
