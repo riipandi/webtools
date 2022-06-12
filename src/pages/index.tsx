@@ -1,12 +1,18 @@
 import Link from 'next/link'
+import useSWR from 'swr'
 
-import { siteMeta } from '@/config/general'
 import catalogue from '@/config/catalogue'
-
+import { siteMeta } from '@/config/general'
+import { swrFetcher } from '@/libraries/helpers'
 import { PageLayout } from '@/layouts/site-layout'
 import { IconNetwork } from '@tabler/icons'
 
-export default function Home() {
+export default function HomePage() {
+  const { data, error } = useSWR('/api/ip-address', swrFetcher)
+
+  if (error) return <div>Failed to load</div>
+  if (!data) return null
+
   return (
     <PageLayout title={`>${siteMeta.siteTitle}`} className='content-wrapper'>
       <section className='flex flex-col py-10 mx-auto lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center'>
@@ -34,12 +40,10 @@ export default function Home() {
               <IconNetwork className='w-8 h-8' />
             </span>
             <h1 className='text-2xl font-semibold text-gray-700 capitalize dark:text-white'>
-              Your IP Addres: 192.2.0.1
+              <span>Your IP Addres: {data.ipAddress}</span>
+              <span className={`fi fi-${data.geo.country.toLowerCase()} h-4`}></span>
             </h1>
-            <p className='text-gray-500 dark:text-gray-300'>
-              Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko)
-              Chrome/102.0.5005.115 Safari/537.36
-            </p>
+            <p className='text-gray-500 dark:text-gray-300'>{data.userAgent}</p>
             <div>
               <button className='px-6 py-3 mt-6 text-base font-medium leading-5 text-center text-white bg-primary-600 rounded-sm hover:bg-primary-500 md:mx-0 md:w-auto focus:outline-none'>
                 See more details

@@ -1,4 +1,5 @@
 @tailwind base;
+@import '~flag-icons/css/flag-icons.css';
 
 /* Start purging... */
 @tailwind components;
