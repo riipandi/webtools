@@ -8,7 +8,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method !== 'GET') return throwError(res, 500, `Method not allowed!`)
 
   const userAgent = req ? req.headers['user-agent'] : navigator.userAgent
-  const forwarded = req.headers['x-forwarded-for'] || req.headers['x-real-ip']
+  const forwarded = req.headers['x-forwarded-for']
   const remoteIP = typeof forwarded === 'string' ? forwarded.split(/, /)[0] : req.socket.remoteAddress
   const isLocalhost = remoteIP === '::1' || remoteIP === '127.0.0.1'
 
