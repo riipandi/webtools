@@ -10,10 +10,10 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const userAgent = req ? req.headers['user-agent'] : navigator.userAgent
   const forwarded = req.headers['x-forwarded-for']
   const remoteIP = typeof forwarded === 'string' ? forwarded.split(/, /)[0] : req.socket.remoteAddress
-  const isLocalhost = remoteIP === '::1' || remoteIP === '127.0.0.1'
+  // const isLocalhost = remoteIP === '::1' || remoteIP === '127.0.0.1'
 
   const { data: resp } = await axios.get(`https://api.myip.com`)
-  const ip = isLocalhost ? resp.ip : remoteIP
+  const ip = process.env.VERCEL !== '1' ? resp.ip : remoteIP
   const geo = await geoip.lookup(ip)
 
   return res.status(200).json({
