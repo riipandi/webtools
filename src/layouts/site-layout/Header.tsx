@@ -65,6 +65,7 @@ const Header = () => {
                 type='text'
                 className='w-full py-1 pl-10 pr-4 text-gray-700 placeholder-gray-600 bg-white border-b border-gray-600 dark:placeholder-gray-300 dark:focus:border-gray-300 lg:w-56 lg:border-transparent dark:bg-gray-900 dark:text-gray-300 focus:outline-none focus:border-gray-600'
                 placeholder={`Search (${isMacOs ? 'cmd+k' : 'ctrl+k'})`}
+                aria-label={`Search (${isMacOs ? 'cmd+k' : 'ctrl+k'})`}
               />
             </div>
           </div>
