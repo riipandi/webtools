@@ -13,5 +13,5 @@ body {
 
 /* Page content wrapper */
 .content-wrapper {
-  @apply max-w-5xl mx-auto px-6 lg:px-8 py-12 lg:pb-14 h-full;
+  @apply max-w-5xl mx-auto py-12 lg:pb-14 h-full;
 }
