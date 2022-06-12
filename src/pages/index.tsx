@@ -3,12 +3,12 @@ import useSWR from 'swr'
 
 import catalogue from '@/config/catalogue'
 import { siteMeta } from '@/config/general'
-import { fetcher } from '@/libraries/helpers'
+import { swrFetcher } from '@/libraries/helpers'
 import { PageLayout } from '@/layouts/site-layout'
 import { IconNetwork } from '@tabler/icons'
 
 export default function HomePage() {
-  const { data, error } = useSWR('/api/ip-address', fetcher)
+  const { data, error } = useSWR('/api/ip-address', swrFetcher)
 
   if (error) return <div>Failed to load</div>
   if (!data) return null
