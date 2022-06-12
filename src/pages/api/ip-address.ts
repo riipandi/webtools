@@ -15,7 +15,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const { data: resp } = await axios.get(`https://ifconfig.co/json`)
   const ip = process.env.VERCEL !== '1' ? resp.ip : remoteIP
   const geo = await geoip.lookup(ip)
-  console.log('DEBUG', ip)
 
   return res.status(200).json({
     ipAddress: ip,
