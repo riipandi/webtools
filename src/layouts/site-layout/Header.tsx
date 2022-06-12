@@ -1,14 +1,11 @@
-import { useTheme } from 'next-themes'
 import Link from 'next/link'
 import { ThemeSwitcher } from '@/components/elements'
 
-const Header = ({ ...props }) => {
-  const { theme } = useTheme()
-
+const Header = () => {
   return (
     <header className='z-30 bg-white shadow dark:bg-gray-900 absolute top-0 w-full'>
       <nav className='max-w-5xl px-4 lg:px-0 py-4 mx-auto lg:flex lg:justify-between lg:items-center'>
-        <div className='lg:flex lg:items-center'>
+        <div className='lg:flex lg:items-center w-full mr-4'>
           <div className='flex items-center justify-between'>
             <div>
               <Link href='/'>
@@ -34,16 +31,23 @@ const Header = ({ ...props }) => {
             </div>
           </div>
           <div className='flex flex-col text-gray-600 capitalize dark:text-gray-300 lg:flex lg:px-12 lg:flex-row lg:items-center'>
-            <Link href='/about'>
-              <a className='mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200'>
-                About
-              </a>
-            </Link>
-            <Link href='/extensions'>
-              <a className='mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200'>
-                Browser Extension
-              </a>
-            </Link>
+            <div>
+              <Link href='/about'>
+                <a className='mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200'>
+                  About
+                </a>
+              </Link>
+              <Link href='/explore'>
+                <a className='mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200'>
+                  Explore
+                </a>
+              </Link>
+              <Link href='/extensions'>
+                <a className='mt-2 transition-colors duration-200 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200'>
+                  Browser Extension
+                </a>
+              </Link>
+            </div>
             <div className='relative mt-4 lg:mt-0 lg:mx-4'>
               <span className='absolute inset-y-0 left-0 flex items-center pl-3'>
                 <svg className='w-4 h-4 text-gray-600 dark:text-gray-300' viewBox='0 0 24 24' fill='none'>
@@ -59,7 +63,7 @@ const Header = ({ ...props }) => {
               <input
                 type='text'
                 className='w-full py-1 pl-10 pr-4 text-gray-700 placeholder-gray-600 bg-white border-b border-gray-600 dark:placeholder-gray-300 dark:focus:border-gray-300 lg:w-56 lg:border-transparent dark:bg-gray-900 dark:text-gray-300 focus:outline-none focus:border-gray-600'
-                placeholder='Search'
+                placeholder='Search (cmd+k)'
               />
             </div>
           </div>
