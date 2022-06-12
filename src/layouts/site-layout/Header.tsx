@@ -73,6 +73,8 @@ const Header = () => {
         <div className='hidden items-center justify-center mt-6 space-x-5 lg:flex lg:mt-0'>
           <Link href='https://github.com/riipandi/webtools'>
             <a
+              target='_blank'
+              rel='noopener noreferrer'
               className='text-gray-600 transition-colors duration-200 transform dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300'
               aria-label='Github'
             >
