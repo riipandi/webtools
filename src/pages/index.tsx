@@ -8,7 +8,7 @@ import { PageLayout } from '@/layouts/site-layout'
 import { IconNetwork } from '@tabler/icons'
 
 export default function HomePage() {
-  const { data, error } = useSWR('/api/ip-address', swrFetcher)
+  const { data, error } = useSWR('/api/userinfo', swrFetcher)
 
   if (error) return <div>Failed to load</div>
   if (!data) return null
